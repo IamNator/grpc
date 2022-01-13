@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "grpc/greeting";
+option go_package = "/greeting";
 
 // The greeter service definition.
 service Greeter {
