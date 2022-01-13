@@ -1,9 +1,13 @@
-syntax = "proto3"
+syntax = "proto3";
+
+option go_package = "grpc/greeting";
 
 // The greeter service definition.
 service Greeter {
   // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply) {}
+
+  rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
 }
 
 // The request message containing the user's name.
